@@ -1,4 +1,4 @@
-DION V6: marca de agua (logo-bg.png) sin circulo ni texto ESTUDIO CREATIVO, mas grande y se desplaza con el scroll.
+DION V6.2: marca de agua como imagen de fondo (logo-bg-rot.png), sin circulo ni texto, grande, se desplaza con el scroll y se repite en cuidados. Funciona en celular.
 DION ESTUDIO CREATIVO — Primera versión
 
 Incluye:

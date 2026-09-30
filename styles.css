@@ -164,49 +164,38 @@ body > *{
   .booking{background:rgba(21,18,13,.68)}
 }
 
-/* V6 — Marca de agua sin círculo ni texto, más grande y que se desplaza con la página */
-html,body{overflow-x:clip}
+/* V6 — Marca de agua (logo sin círculo ni texto) grande, rotada y que se desplaza con la página.
+   Se usa como imagen de fondo de una capa del tamaño de la página: nada se sale de la pantalla en celular. */
 body::before{
-  position:absolute;           /* antes fixed: ahora se mueve con el scroll */
-  width:min(1500px,125vw);
-  height:auto;
-  aspect-ratio:1600/1939;
-  left:60%;
-  top:2vh;
-  transform:translateX(-50%) rotate(-24deg);
-  transform-origin:center;
-  background-image:url('logo-bg.png');
-  background-size:100% 100%;
-  background-position:center;
+  position:absolute;
+  inset:0;
+  width:auto;height:auto;
+  left:0;top:0;
+  transform:none;
+  aspect-ratio:auto;
+  background-image:url('logo-bg-rot.png');
   background-repeat:no-repeat;
+  background-size:min(2100px,176vw) auto;
+  background-position:60% 0;
   opacity:.14;
+}
+/* Página de cuidados (larga): el fondo se repite */
+.care-page::before{
+  background-image:url('logo-bg-rot.png'),url('logo-bg-rot.png');
+  background-position:60% 0,40% 86%;
 }
 @media(max-width:900px){
   body::before{
-    width:170vw;
-    left:55%;
-    top:12vh;
-    opacity:.11;
+    background-size:270vw auto;
+    background-position:55% 0;
+    opacity:.10;
   }
-}
-
-/* V6.1 — Página de cuidados (larga): el fondo se repite una segunda vez más abajo */
-.care-page main{position:relative}
-.care-page main::after{
-  content:'';
-  position:absolute;
-  z-index:-1;
-  pointer-events:none;
-  width:min(1500px,125vw);
-  aspect-ratio:1600/1939;
-  left:40%;
-  top:48%;
-  transform:translateX(-50%) rotate(-24deg);
-  background:url('logo-bg.png') center/100% 100% no-repeat;
-  opacity:.14;
-  filter:sepia(1) saturate(.75) hue-rotate(345deg) brightness(1.25) contrast(1.05);
-  mix-blend-mode:screen;
-}
-@media(max-width:900px){
-  .care-page main::after{width:170vw;left:45%;top:50%;opacity:.11}
+  body:not(.care-page)::before{
+    background-image:url('logo-bg-rot.png'),url('logo-bg-rot.png');
+    background-position:55% 0,45% 72%;
+  }
+  .care-page::before{
+    background-image:url('logo-bg-rot.png'),url('logo-bg-rot.png'),url('logo-bg-rot.png'),url('logo-bg-rot.png'),url('logo-bg-rot.png'),url('logo-bg-rot.png');
+    background-position:55% 0,45% 18%,55% 36%,45% 54%,55% 72%,45% 90%;
+  }
 }
