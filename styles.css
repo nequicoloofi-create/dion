@@ -199,3 +199,40 @@ body::before{
     background-position:55% 0,45% 18%,55% 36%,45% 54%,55% 72%,45% 90%;
   }
 }
+
+/* V6.2 — Menú móvil (hamburguesa) y fondo grande repetido en celular */
+.menu-toggle{display:none}
+@media(max-width:900px){
+  .site-header{gap:10px}
+  .brand{margin-right:auto}
+  .menu-toggle{
+    display:flex;flex-direction:column;justify-content:center;gap:5px;
+    width:44px;height:44px;padding:0 11px;border-radius:50%;
+    background:transparent;border:1px solid rgba(208,168,93,.5);cursor:pointer;
+  }
+  .menu-toggle span{display:block;height:1.5px;background:var(--gold);transition:.25s}
+  .site-header.open .menu-toggle span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+  .site-header.open .menu-toggle span:nth-child(2){opacity:0}
+  .site-header.open .menu-toggle span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+  .desktop-nav{
+    display:none;position:absolute;top:100%;left:0;right:0;
+    flex-direction:column;gap:0;
+    background:rgba(8,8,7,.97);border-bottom:1px solid var(--line);
+    box-shadow:0 18px 30px rgba(0,0,0,.5);
+  }
+  .site-header.open .desktop-nav{display:flex}
+  .desktop-nav a{padding:18px 6vw;font-size:13px;border-top:1px solid rgba(208,168,93,.14)}
+  .site-header{z-index:50}
+
+  /* Fondo: grande y repetido a lo largo de toda la página */
+  body::before{
+    top:0;left:0;width:100%;height:100%;aspect-ratio:auto;
+    transform:none;
+    background-image:url('logo-bg-rot.png');
+    background-size:235vw auto;
+    background-repeat:repeat-y;
+    background-position:35% 0;
+    opacity:.13;
+  }
+  .care-page main::after{display:none}
+}
