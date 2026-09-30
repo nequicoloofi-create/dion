@@ -1,0 +1,212 @@
+:root{--vanilla:#f8f3e8;--cream:#fffdf8;--beige:#e9decd;--sand:#d4c3ad;--ink:#1d1b19;--muted:#756e65;--line:rgba(29,27,25,.14);--accent:#b39b7d;--serif:'Cormorant Garamond',Georgia,serif;--sans:'Manrope',Arial,sans-serif;--shadow:0 20px 60px rgba(52,43,31,.10)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--vanilla);color:var(--ink);font-family:var(--sans);line-height:1.65}a{text-decoration:none;color:inherit}button{font:inherit}img{max-width:100%;display:block}.site-header{height:78px;padding:12px 5vw;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:20;background:rgba(248,243,232,.88);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:11px}.brand-mark{width:45px;height:45px;border-radius:50%;display:grid;place-items:center;overflow:hidden;background:var(--ink)}.brand-mark img{width:100%;height:100%;object-fit:cover}.brand-copy{display:flex;flex-direction:column;line-height:1}.brand-copy strong{font-family:var(--serif);font-size:23px;letter-spacing:.16em}.brand-copy small{font-size:7px;letter-spacing:.25em;margin-top:4px}.desktop-nav{display:flex;gap:34px;font-size:12px;letter-spacing:.12em;text-transform:uppercase}.desktop-nav a,.footer-links a{transition:.2s}.desktop-nav a:hover,.footer-links a:hover{opacity:.55}.header-cta,.primary-btn{display:inline-flex;align-items:center;gap:15px;background:var(--ink);color:#fffdf8;padding:13px 20px;border-radius:999px;text-transform:uppercase;letter-spacing:.1em;font-size:10px;font-weight:700}.primary-btn span{font-size:17px;line-height:0}.hero{min-height:calc(100vh - 78px);padding:8vw 8vw 5vw;position:relative;display:flex;align-items:center;overflow:hidden}.hero-glow{position:absolute;width:52vw;height:52vw;border-radius:50%;right:-17vw;top:4vw;background:radial-gradient(circle,rgba(211,193,164,.42),rgba(248,243,232,0) 68%)}.hero-content{width:55%;position:relative;z-index:2}.eyebrow{font-size:10px;letter-spacing:.25em;text-transform:uppercase;color:var(--muted);font-weight:700;margin:0 0 18px}.hero h1,.section-heading h2,.booking h2{font-family:var(--serif);font-weight:500;line-height:.93;margin:0;font-size:clamp(60px,9vw,132px);letter-spacing:-.04em}.hero h1 em,.section-heading h2 em,.booking h2 em{font-style:italic;font-weight:400}.hero-text{max-width:520px;color:var(--muted);font-size:16px;margin:28px 0 32px}.hero-logo-wrap{width:390px;height:390px;position:absolute;right:9vw;top:50%;transform:translateY(-50%);display:grid;place-items:center}.hero-logo{width:270px;position:relative;z-index:2;filter:drop-shadow(0 25px 30px rgba(0,0,0,.12))}.logo-orbit{position:absolute;inset:0;border:1px solid rgba(29,27,25,.12);border-radius:50%}.logo-orbit:after{content:'';position:absolute;width:9px;height:9px;background:var(--ink);border-radius:50%;top:12%;right:20%}.scroll-note{position:absolute;bottom:35px;left:8vw;font-size:9px;text-transform:uppercase;letter-spacing:.22em;color:var(--muted);display:flex;align-items:center;gap:10px}.scroll-note span{width:30px;height:1px;background:var(--ink)}.section{padding:115px 8vw}.portfolio{background:var(--cream)}.section-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:60px;margin-bottom:52px}.section-heading h2{font-size:clamp(52px,6vw,88px);max-width:700px}.section-heading>p{max-width:370px;color:var(--muted);font-size:13px}.carousel{display:flex;align-items:center;gap:18px}.carousel-window{overflow:hidden;width:100%}.carousel-track{display:flex;transition:transform .7s cubic-bezier(.2,.8,.2,1)}.work-card{min-width:100%;display:grid;grid-template-columns:1.4fr .6fr;background:var(--vanilla);border:1px solid var(--line);box-shadow:var(--shadow)}.work-image{height:550px;overflow:hidden}.work-image img{width:100%;height:100%;object-fit:cover;filter:saturate(.7) contrast(.95)}.work-info{padding:42px;display:flex;flex-direction:column;justify-content:flex-end}.work-info span{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}.work-info h3{font-family:var(--serif);font-size:42px;line-height:1;margin:14px 0 22px;font-weight:500}.text-btn{border:0;background:none;text-align:left;padding:0;text-transform:uppercase;font-size:10px;letter-spacing:.15em;font-weight:700;cursor:pointer}.carousel-btn{width:48px;height:48px;flex:0 0 48px;border:1px solid var(--line);background:transparent;border-radius:50%;cursor:pointer;transition:.2s}.carousel-btn:hover{background:var(--ink);color:#fff}.dots{display:flex;justify-content:center;gap:8px;margin-top:22px}.dot{width:6px;height:6px;border-radius:50%;border:0;background:#c7bba9;padding:0;cursor:pointer}.dot.active{background:var(--ink);transform:scale(1.35)}.care{background:var(--vanilla)}.care-heading{margin-bottom:35px}.accordion{border-top:1px solid var(--line)}details{border-bottom:1px solid var(--line)}summary{list-style:none;display:grid;grid-template-columns:70px 1fr 35px;gap:15px;align-items:center;padding:27px 0;cursor:pointer}summary::-webkit-details-marker{display:none}summary>span{font-family:var(--serif);font-size:20px;color:var(--accent)}summary h3{font-family:var(--serif);font-weight:600;font-size:27px;margin:0;line-height:1.1}summary p{margin:7px 0 0;color:var(--muted);font-size:12px}summary b{font-size:23px;font-weight:400;text-align:center;transition:.3s}details[open] summary b{transform:rotate(45deg)}.details-body{padding:0 70px 38px 85px;max-width:1050px;color:#5d574f;font-size:13px}.details-body ol,.details-body ul{padding-left:20px}.details-body li{margin:10px 0}.details-body strong{color:var(--ink)}.closing,.notice,.note{font-style:italic}.notice{background:#eee4d5;padding:15px 18px;border-left:2px solid var(--accent)}h4{font-family:var(--serif);font-size:24px;color:var(--ink);margin:28px 0 8px}.alerts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.alert{border:1px solid var(--line);padding:20px;background:rgba(255,255,255,.38)}.alert strong{font-size:9px;letter-spacing:.2em}.alert p{margin-bottom:0}.team-note{margin-top:35px;padding:20px 25px;background:var(--ink);color:#fffdf8;font-family:var(--serif);font-size:20px;text-align:center}.booking{background:var(--beige);text-align:center}.booking-inner{max-width:850px;margin:auto}.booking h2{font-size:clamp(54px,7vw,95px)}.booking p:not(.eyebrow){color:#665f57;max-width:520px;margin:25px auto 30px}.site-footer{padding:50px 8vw 28px;background:var(--ink);color:#fffdf8;display:grid;grid-template-columns:1fr auto;gap:30px;align-items:end}.footer-brand img{width:95px;background:#1d1b19;border-radius:50%}.footer-links{display:flex;gap:25px;font-size:11px;text-transform:uppercase;letter-spacing:.12em}.site-footer>p{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.15);padding-top:20px;margin:0;color:#bdb5ab;font-size:10px}
+@media(max-width:900px){.desktop-nav{display:none}.header-cta{padding:11px 15px}.hero{padding-top:70px;min-height:780px;align-items:flex-start}.hero-content{width:100%;padding-top:40px}.hero-logo-wrap{width:300px;height:300px;right:50%;transform:translate(50%,0);top:420px}.hero-logo{width:205px}.hero-glow{width:90vw;height:90vw;right:-35vw;top:300px}.scroll-note{display:none}.section{padding:80px 6vw}.section-heading{display:block}.section-heading>p{margin-top:25px}.work-card{grid-template-columns:1fr}.work-image{height:430px}.work-info{min-height:250px;padding:30px}.alerts{grid-template-columns:1fr}.details-body{padding-left:0;padding-right:0}.site-footer{grid-template-columns:1fr}.footer-links{flex-wrap:wrap}.site-footer>p{grid-column:1}}
+@media(max-width:560px){.site-header{padding:10px 5vw}.brand-copy{display:none}.hero h1{font-size:64px}.hero-logo-wrap{top:390px}.work-image{height:360px}.work-info h3{font-size:35px}.carousel-btn{width:40px;height:40px;flex-basis:40px}.carousel{gap:7px}summary{grid-template-columns:40px 1fr 25px}summary h3{font-size:22px}.summary p{font-size:11px}}
+
+/* V2 — página independiente de cuidados */
+.care-page{background:var(--vanilla)}
+.care-hero{padding:110px 8vw 80px;background:linear-gradient(135deg,var(--vanilla),var(--beige));border-bottom:1px solid var(--line)}
+.care-hero-inner{max-width:1000px}
+.care-hero h1{font-family:var(--serif);font-weight:500;font-size:clamp(58px,8vw,108px);line-height:.94;letter-spacing:-.04em;margin:0}
+.care-hero h1 em{font-style:italic}
+.care-hero p.lead{max-width:760px;color:var(--muted);font-size:18px;line-height:1.8;margin:28px 0 0}
+.care-content{padding:70px 8vw 110px;max-width:1250px;margin:auto}
+.care-intro{font-size:17px;color:#5d574f;max-width:900px;margin:0 auto 48px}
+.care-card{background:rgba(255,253,248,.72);border:1px solid var(--line);padding:48px 55px;margin:24px 0;box-shadow:var(--shadow)}
+.care-card .number{font-family:var(--serif);font-size:22px;color:var(--accent);letter-spacing:.08em}
+.care-card h2{font-family:var(--serif);font-size:clamp(34px,4vw,52px);font-weight:600;line-height:1.05;margin:8px 0 12px}
+.care-card .subtitle{color:var(--muted);font-size:16px;line-height:1.8;margin:0 0 30px;max-width:850px}
+.care-card h3{font-family:var(--serif);font-size:30px;margin:35px 0 12px}
+.care-card p,.care-card li{font-size:16px;line-height:1.85;color:#5d574f}
+.care-card ol,.care-card ul{padding-left:24px}.care-card li{margin:16px 0}.care-card strong{color:var(--ink)}
+.care-notice{background:#eee4d5;padding:20px 24px;border-left:3px solid var(--accent);font-size:16px!important}
+.care-alerts{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px}
+.care-alert{padding:28px;border:1px solid var(--line);background:rgba(255,255,255,.42)}
+.care-alert strong{font-size:11px;letter-spacing:.18em}.care-alert p{margin-bottom:0}
+.care-final{margin-top:45px;background:var(--ink);color:#fffdf8;padding:34px 40px;text-align:center;font-family:var(--serif);font-size:25px;line-height:1.35}
+.back-link{display:inline-flex;margin-top:35px;font-size:11px;letter-spacing:.15em;text-transform:uppercase;font-weight:700}
+@media(max-width:900px){.care-hero{padding:80px 6vw 60px}.care-content{padding:50px 6vw 80px}.care-card{padding:32px 25px}.care-alerts{grid-template-columns:1fr}.care-card p,.care-card li{font-size:15px}}
+
+/* V3 — Identidad oscura premium: negro + dorado + marca de agua */
+:root{
+  --vanilla:#0b0b0a;
+  --cream:#11110f;
+  --beige:#171512;
+  --sand:#2a241b;
+  --ink:#f4efe5;
+  --muted:#b6ad9e;
+  --line:rgba(194,151,65,.34);
+  --accent:#c9a35a;
+  --gold:#d0a85d;
+  --gold-soft:#9d7a3f;
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --sans:'Manrope',Arial,sans-serif;
+  --shadow:0 20px 70px rgba(0,0,0,.38)
+}
+html,body{background:#080807;color:var(--ink)}
+body{position:relative}
+body::before{
+  content:'';position:fixed;z-index:-1;pointer-events:none;
+  width:min(1050px,90vw);height:min(1050px,90vw);
+  left:50%;top:53%;transform:translate(-50%,-50%) rotate(-24deg);
+  background:url('logo.png') center/contain no-repeat;
+  opacity:.045;filter:grayscale(1) sepia(1) saturate(.8) brightness(1.35);
+}
+body::after{
+  content:'';position:fixed;z-index:-2;inset:0;pointer-events:none;
+  background:radial-gradient(circle at 78% 18%,rgba(180,133,45,.075),transparent 28%),radial-gradient(circle at 15% 80%,rgba(180,133,45,.045),transparent 25%);
+}
+.site-header{background:rgba(8,8,7,.88);border-bottom:1px solid var(--line);box-shadow:0 8px 30px rgba(0,0,0,.3)}
+.brand-mark{background:#050504;border:1px solid rgba(208,168,93,.5)}
+.brand-copy strong,.hero h1,.section-heading h2,.booking h2,.work-info h3,.care-card h2,.care-card h3,.care-hero h1{color:var(--ink)}
+.brand-copy small,.eyebrow{color:var(--gold)}
+.desktop-nav a:hover,.footer-links a:hover{color:var(--gold);opacity:1}
+.header-cta,.primary-btn{background:var(--gold);color:#0a0907;box-shadow:0 8px 25px rgba(201,163,90,.16)}
+.header-cta:hover,.primary-btn:hover{background:#e0bd78}
+.hero{background:transparent}
+.hero-glow{background:radial-gradient(circle,rgba(196,151,62,.14),rgba(8,8,7,0) 68%)}
+.hero-logo-wrap{opacity:.9}
+.hero-logo{filter:drop-shadow(0 25px 30px rgba(0,0,0,.5))}
+.logo-orbit{border-color:rgba(201,163,90,.35)}
+.logo-orbit:after{background:var(--gold)}
+.scroll-note{color:var(--muted)}
+.scroll-note span{background:var(--gold)}
+.section{background:#0b0b0a}
+.portfolio{background:#10100e}
+.section-heading>p,.hero-text,.care-card .subtitle,.care-intro{color:var(--muted)}
+.work-card{background:#11110f;border-color:var(--line);box-shadow:var(--shadow)}
+.work-image{border-right:1px solid var(--line)}
+.work-image img{filter:grayscale(.2) saturate(.7) contrast(1.04)}
+.work-info span{color:var(--gold)}
+.text-btn{color:var(--gold)}
+.carousel-btn{border-color:var(--line);color:var(--ink);background:#0c0c0b}
+.carousel-btn:hover{background:var(--gold);color:#080807;border-color:var(--gold)}
+.dot{background:#4e412b}.dot.active{background:var(--gold)}
+.care{background:#0b0b0a}
+summary>span{color:var(--gold)}
+summary p,.details-body{color:var(--muted)}
+.notice,.care-notice{background:rgba(174,132,51,.08);border-left-color:var(--gold);color:var(--muted)}
+h4{color:var(--ink)}
+.alert{background:#11110f;border-color:var(--line)}
+.team-note,.care-final{background:#050504;border:1px solid var(--line);color:#f6efe2}
+.booking{background:#15120d;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.booking p:not(.eyebrow){color:var(--muted)}
+.site-footer{background:#050504;border-top:1px solid var(--line)}
+.site-footer>p{border-top-color:rgba(201,163,90,.22);color:#8f8779}
+.care-hero{background:linear-gradient(135deg,#080807,#17130c);border-bottom-color:var(--line)}
+.care-card{background:rgba(17,17,15,.9);border-color:var(--line);box-shadow:var(--shadow)}
+.care-card p,.care-card li{color:#b8b0a3}
+.care-card strong{color:var(--ink)}
+.care-alert{background:#10100e;border-color:var(--line)}
+.back-link{color:var(--gold)}
+
+/* Ornamentos dorados discretos */
+.section-heading h2::after,.care-card h2::after{
+  content:'';display:block;width:58px;height:1px;background:linear-gradient(90deg,var(--gold),transparent);margin-top:18px;opacity:.8
+}
+.work-card,.care-card,.care-alert{position:relative}
+.work-card::before,.care-card::before,.care-alert::before{
+  content:'';position:absolute;inset:0;pointer-events:none;border:1px solid rgba(201,163,90,.08)
+}
+@media(max-width:900px){body::before{width:125vw;height:125vw;top:50%;opacity:.035}.work-image{border-right:0;border-bottom:1px solid var(--line)}}
+
+/* V4 — Marca de agua real del logo DION: grande, visible y diagonal */
+body::before{
+  content:'';
+  position:fixed;
+  z-index:0;
+  pointer-events:none;
+  width:min(1250px,125vw);
+  height:min(1250px,125vw);
+  left:58%;
+  top:54%;
+  transform:translate(-50%,-50%) rotate(-24deg);
+  background-image:url('logo.png');
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:contain;
+  opacity:.15;
+  filter:sepia(1) saturate(.75) hue-rotate(345deg) brightness(1.25) contrast(1.05);
+  mix-blend-mode:screen;
+}
+body > *{
+  position:relative;
+  z-index:1;
+}
+.site-header,.site-footer{
+  position:relative;
+  z-index:10;
+}
+@media(max-width:900px){
+  body::before{
+    width:145vw;
+    height:145vw;
+    left:62%;
+    top:52%;
+    transform:translate(-50%,-50%) rotate(-24deg);
+    opacity:.11;
+  }
+}
+
+/* V5 — La marca de agua también atraviesa Portafolio y Contacto */
+.portfolio{
+  background:rgba(16,16,14,.72);
+}
+.booking{
+  background:rgba(21,18,13,.72);
+}
+/* Mantener la textura negra sin ocultar el logo del fondo */
+.section{
+  background-color:transparent;
+}
+@media(max-width:900px){
+  .portfolio{background:rgba(16,16,14,.68)}
+  .booking{background:rgba(21,18,13,.68)}
+}
+
+/* V6 — Marca de agua sin círculo ni texto, más grande y que se desplaza con la página */
+html,body{overflow-x:clip}
+body::before{
+  position:absolute;           /* antes fixed: ahora se mueve con el scroll */
+  width:min(1500px,125vw);
+  height:auto;
+  aspect-ratio:1600/1939;
+  left:60%;
+  top:2vh;
+  transform:translateX(-50%) rotate(-24deg);
+  transform-origin:center;
+  background-image:url('logo-bg.png');
+  background-size:100% 100%;
+  background-position:center;
+  background-repeat:no-repeat;
+  opacity:.14;
+}
+@media(max-width:900px){
+  body::before{
+    width:170vw;
+    left:55%;
+    top:12vh;
+    opacity:.11;
+  }
+}
+
+/* V6.1 — Página de cuidados (larga): el fondo se repite una segunda vez más abajo */
+.care-page main{position:relative}
+.care-page main::after{
+  content:'';
+  position:absolute;
+  z-index:-1;
+  pointer-events:none;
+  width:min(1500px,125vw);
+  aspect-ratio:1600/1939;
+  left:40%;
+  top:48%;
+  transform:translateX(-50%) rotate(-24deg);
+  background:url('logo-bg.png') center/100% 100% no-repeat;
+  opacity:.14;
+  filter:sepia(1) saturate(.75) hue-rotate(345deg) brightness(1.25) contrast(1.05);
+  mix-blend-mode:screen;
+}
+@media(max-width:900px){
+  .care-page main::after{width:170vw;left:45%;top:50%;opacity:.11}
+}
