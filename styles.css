@@ -236,3 +236,35 @@ body::before{
   }
   .care-page main::after{display:none}
 }
+
+/* V6.3 — Vuelve el logo original (con círculo y "ESTUDIO CREATIVO") y su tamaño de antes (V5).
+   Se mantiene el desplazamiento con la página y la repetición en cuidados. */
+html body::before,
+html body.care-page::before,
+html body:not(.care-page)::before{
+  position:absolute;inset:0;top:0;left:0;width:auto;height:auto;
+  transform:none;aspect-ratio:auto;
+  background-image:url('logo-rot.png');
+  background-repeat:no-repeat;
+  background-size:min(1651px,165vw) auto;   /* mismo tamaño del logo de antes (1250px / 125vw, ya rotado) */
+  background-position:58% -339px;
+  opacity:.15;
+  filter:sepia(1) saturate(.75) hue-rotate(345deg) brightness(1.25) contrast(1.05);
+  mix-blend-mode:screen;
+}
+html body.care-page::before{
+  background-image:url('logo-rot.png'),url('logo-rot.png');
+  background-repeat:no-repeat,no-repeat;
+  background-position:58% -339px,42% 62%;
+}
+@media(max-width:900px){
+  html body::before,
+  html body.care-page::before,
+  html body:not(.care-page)::before{
+    background-image:url('logo-rot.png');
+    background-size:191vw auto;             /* 145vw de antes, ya rotado */
+    background-repeat:repeat-y;
+    background-position:62% 0;
+    opacity:.11;
+  }
+}
