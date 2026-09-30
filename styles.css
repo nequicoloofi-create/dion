@@ -268,3 +268,29 @@ html body.care-page::before{
     opacity:.11;
   }
 }
+
+/* V6.3 — CELULAR: el logo de fondo vuelve EXACTAMENTE a como estaba antes (tamaño normal, fijo, logo original).
+   El logo grande sin círculo y que se desplaza queda solo para computador. */
+@media(max-width:900px){
+  body::before,
+  body.care-page::before,
+  body:not(.care-page)::before{
+    position:fixed;
+    inset:auto;
+    z-index:0;
+    width:145vw;
+    height:145vw;
+    aspect-ratio:auto;
+    left:62%;
+    top:52%;
+    transform:translate(-50%,-50%) rotate(-24deg);
+    background-image:url('logo.png');
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:contain;
+    opacity:.11;
+    filter:sepia(1) saturate(.75) hue-rotate(345deg) brightness(1.25) contrast(1.05);
+    mix-blend-mode:screen;
+  }
+  .care-page main::after{display:none}
+}
